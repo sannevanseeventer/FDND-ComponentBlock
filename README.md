@@ -21,6 +21,14 @@ Create a new project in the current directory: <br>
 To create a production version of your app: <br>
 ```npm run build```
 
+
+## Gebruikte technieken
+<ul>
+        <li>🎨 Progressive Enhancement</li>
+        <li>🕹️ Accessibility</li>
+ <li> 🚃 Responsive Design </li>
+  </ul>     
+
 ## Licentie
 
 ![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
