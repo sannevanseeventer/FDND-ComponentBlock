@@ -9,18 +9,7 @@ Onderstaand de punten waaraan dit project moet voldoen.
 <img width="891" alt="Scherm­afbeelding 2023-11-16 om 19 38 23" src="https://github.com/sannevanseeventer/FDND-ComponentBlock/assets/112857444/2651097d-e5ad-4601-b9da-da0f436657b2">
 
 ## Installatie
-
-1. Creating a project <br>
-Create a new project in the current directory: <br>
-```npm create svelte@latest```
-
-2. Developing <br>
-```npm run dev```
-
-4. Building <br>
-To create a production version of your app: <br>
-```npm run build```
-
+Fork dit project. In de root type je `npm install` om alle packages te installeren. Dan `npm run dev` om de website lokaal te bekijken.
 
 ## Gebruikte technieken
 <ul>
