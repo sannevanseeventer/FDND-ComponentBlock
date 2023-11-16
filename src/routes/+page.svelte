@@ -1,6 +1,6 @@
 <script>
-    import Nav from "../lib/components/Nav.svelte"
+    import Nav1 from "../lib/components/NavOption1.svelte"
 </script>
 
-<Nav />
+<Nav1 />
 

@@ -13,7 +13,6 @@
   
   <div class="navbar-container">
     <div class="navbar">
-      <title>SPATwater</title>
       <img class="logo" src="logotest2.png" alt="logo spatwater" />
       <label for="toggle" aria-label="menu icon">&#9776;</label>
     </div>
@@ -21,7 +20,7 @@
     <input id="toggle" type="checkbox" class="checkbox" class:js={mounted} bind:checked={jsEnabled} />
   
     {#if jsEnabled}
-    <nav>
+    <nav transition:slide>
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/over">Over</a></li>
