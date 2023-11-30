@@ -16,6 +16,7 @@
       <img class="logo" src="logotest2.png" alt="logo spatwater" />
       <label for="toggle" aria-label="menu icon">&#9776;</label>
     </div>
+
   
     <input id="toggle" type="checkbox" class="checkbox" class:js={mounted} bind:checked={jsEnabled} />
   
@@ -32,6 +33,7 @@
           </ul>
     </nav>
     {/if}
+
     </div>
 
     <div class="navbar-container-desktop">
@@ -65,6 +67,11 @@
         --green: #44bc52;
         --darkblue: #384b61;
   }
+
+  :global(:has(.navbar-container)){
+    container-type: inline-size;
+  }
+
     .checkbox {
         position: absolute;
         width: 1px;
@@ -94,18 +101,20 @@
         justify-content: space-between;
         padding: 0.5rem 1.5em;
         background: white;
+
+        & .navbar label {
+        font-size: 1.8rem;
+        cursor: pointer;
+        border-radius: 0.25em;
+        color: var(--darkblue);
+    }
+
     }
     
    .logo{
         width: 7rem;
    }
     
-    .navbar label {
-        font-size: 1.8rem;
-        cursor: pointer;
-        border-radius: 0.25em;
-        color: var(--darkblue);
-    }
     
     nav {
         padding-bottom: 1.5em;
@@ -144,7 +153,11 @@
         display: block;
     }
 
-    @media only screen and (min-width: 900px) {
+    /* @container (min-width: 900px) {
+        
+    } */
+    
+    /* @media only screen and (min-width: 900px) {
         .navbar label {
         display: none;
     }
@@ -154,8 +167,8 @@
         padding: 0;
     }
 
-.navbar-container{
-    display: none;
+    .navbar-container{
+        display: none;
 }
     .navbar-container-desktop{
         display: block;
@@ -175,5 +188,84 @@
     }
 
     
-    }
+    } */
+
+    /* @container (min-width: 900px) {
+  .navbar label {
+    display: none;
+  }
+
+  nav {
+    display: none;
+    padding: 0;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-container-desktop {
+    display: block;
+  }
+
+  .navbar-desktop {
+    display: block;
+  }
+
+  .navbar-desktop ul {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .navbar-desktop a {
+    font-size: 1rem;
+  }
+} */
+
+@media only screen and (min-width: 900px) {
+  /* Styles for larger screens */
+
+  .navbar label {
+    display: none;
+  }
+
+  nav {
+    display: none;
+    padding: 0;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-container-desktop {
+    display: block;
+  }
+
+  .navbar-desktop {
+    display: block;
+  }
+
+  .navbar-desktop ul {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .navbar-desktop a {
+    font-size: 1rem;
+  }
+}
+
+@container (min-width: 900px) {
+  /* Styles for larger screens when the containing element is wider */
+
+  .navbar-container {
+    display: block;
+  }
+
+  .navbar-container-desktop {
+    display: none;
+  }
+}
+
   </style>
