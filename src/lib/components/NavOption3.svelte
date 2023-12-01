@@ -1,6 +1,6 @@
 <nav>
     <div class="navbar-container">
-    <img class="logo" src="/assets/logotest2.png" alt="logo spatwater" />
+    <img class="logo" width="100" height="auto" src="logotest2.png" alt="logo spatwater" />
     
     <input class="menu-button" type="checkbox" id="menu-button" />
     <label class="menu-icon" for="menu-button"><span class="bars"></span></label>
@@ -43,7 +43,7 @@
       & li a {
       display: block;
       text-align: center;
-      padding: 1.25em 1.25em;
+      padding: 1.25em 20px;
       text-decoration: none;
       color: var(--darkblue);
       font-size: 1.3rem;
@@ -130,10 +130,10 @@
         }
   }
   
+  /* 48em = 768px */
   @container (min-width: 900px) {
     nav li{
       float: left;
-      & a {}
     }
   
     nav li a {
